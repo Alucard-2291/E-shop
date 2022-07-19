@@ -1,0 +1,23 @@
+.header {
+  background-color: #131921;
+  color: #fff;
+}
+.header .header__logoTitle {
+  color: #ff9f00;
+}
+.search__button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #ff9f00;
+  color: #000;
+}
+.search__button:hover {
+  background-color: #ff9f00;
+  color: #fff;
+}
+.nav__itemLineOne {
+  font-size: 0.8rem;
+}
+.nav__itemLineTwo {
+  font-weight: bold;
+}
