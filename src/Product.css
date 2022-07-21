@@ -1,0 +1,17 @@
+.product{
+    background-color: #fff;
+}
+.product__image img{
+    width: 200px;
+}
+.product__rating{
+    color: #ff9f00;
+}
+.product__addButton button{
+    background-color: #ff9f00;
+    color:#000;
+    border: #ff9f00;
+}
+.product__addButton button:hover{
+    background-color: #be7602;
+}

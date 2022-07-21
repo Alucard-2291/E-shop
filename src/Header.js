@@ -17,8 +17,8 @@ function Header() {
       <div className="col-7">
         <div className="header__search input-group">
           <input type="text" className="header_searchInput form-control" placeholder='Search Item' />
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary search__button" type="button">
+          <div className="input-group-append">
+            <button className="btn btn-outline-secondary search__button" type="button">
               <SearchIcon className="header_searchIcon" />
             </button>
           </div>
@@ -39,8 +39,8 @@ function Header() {
             </div>
           </div>
           <div className="col-auto">
-            <div className="nav__item">
-              <ShoppingBasketIcon className="itemBasket pe-2" />
+            <div className="nav__itemBasket">
+              <ShoppingBasketIcon className="pe-2" />
               <span className="nav__itemLineTwo">0</span>
             </div>
           </div>
