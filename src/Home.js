@@ -2,9 +2,11 @@ import React from 'react';
 import Product from './Product';
 
 import './Home.css';
+import Header from './Header';
 function Home() {
   return (
     <div className="home">
+        <Header />
       <div className="home__container">
         <img
           src="https://www.x-cart.com/wp-content/uploads/2019/01/ecommerce-768x278.jpg"
