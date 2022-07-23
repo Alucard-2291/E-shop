@@ -3,18 +3,26 @@ import StarIcon from '@mui/icons-material/Star';
 
 import './Checkout.css';
 
-function CheckoutProduct() {
-  <div className="row">
-    <div className="col-3">Image</div>
-    <div className="col-9">
-      <p className="m-0 fw-bold">Bag</p>
-      <p className="">$11.96</p>
-      <div className="rating">
-        <StarIcon />
+function CheckoutProduct(props) {
+  const starRating = Array(props.rating)
+    .fill()
+    .map((rating) => <StarIcon />);
+
+  return (
+    <div className="checkout__product">
+      <div className="product__info">
+        <p className="m-0">{props.title}</p>
+        <p className="m-0 fw-bold">${props.price}</p>
+        <div className="product__rating">{starRating}</div>
       </div>
-      <button>Remove from Basket</button>
+      <div className="product__image d-flex justify-content-center">
+        <img src={props.image} />
+      </div>
+      <div className="product__addButton mt-4 text-center">
+        <button className="btn btn-primary fw-bold">Add to Basket</button>
+      </div>
     </div>
-  </div>;
+  );
 }
 
 export default CheckoutProduct;
